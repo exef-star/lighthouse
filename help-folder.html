@@ -4,6 +4,7 @@
 	<title>帮助页面 | 文件夹加密程序</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://s1.imagehub.cc/images/2024/08/23/21157dab9ecdc72d252db3d8f0bb3c23.png">
     <style>
         body {
             font-weight: lighter
@@ -15,11 +16,36 @@
             display: inline;
             float: right;
         }
+        .div-cookies {
+            display: inline;
+        }
+        .btn-cookies {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            height: 30px;
+            border-radius: 8px;
+            transition: all 0.5s;
+        }
+        .btn-cookies::before {
+            color: #000;
+            border: 1px solid #ccc;
+        }
+        .btn-cookies:hover {
+            color: #000000c7;
+            border: 1px solid #cccccc7e;
+        }
     </style>
 </head>
 <body>
+    <!-- Cookies声明 -->
+    <div id="cookies-alert" class="div-cookies">
+        <p>🎉本网站使用cookies来提高用户体验，若您同意，您可以点击“我知道啦”按钮，否则请关闭本网站。<button id="cookies-agree" style="float: right;" class="btn-cookies">🍪接受</button></p>
+    </div>
 	<h1>🍞 文件夹加密程序 帮助页面</h1>
+    <img src="https://s1.imagehub.cc/images/2024/08/23/d6f5a97ef41832d9dc06e9b5865d9332.png" style="width: 100%;">
 	<hr>
+    <p>文件夹加密程序是一个Windows平台下的文件加密工具，可以快速的实现文件夹里文件加密和解密。本页面将详细介绍文件夹加密程序的使用方法、注意事项、其他说明以及更新日志。</p>
     <h2>🧀1. 使用方法</h2>
     <h3>🥪1.1 生成密钥</h3>
     <p>第一次使用的时候，需要生成密钥。点击“生成密钥”按钮，会生成一个随机的密钥，并将密钥文件以.key后缀名保存到本地。密钥会在程序的“控制台”页面中显示。</p>
@@ -35,8 +61,23 @@
     <p>4. 加密后的文件和解密后的文件会以.enc后缀名保存，请不要修改文件扩展名。</p>
     <p>5. 加密后的文件和解密后的文件会占用磁盘空间，请注意文件大小。</p>
     <p>6. 请不要在加密文件夹和解密文件夹中存储重要文件，以免造成数据丢失。</p>
+    <p>7. 程序会自动检测是否存在.key文件，如果存在，则会自动加载密钥。如果不存在，则会提示用户生成密钥。</p>
+    <p>8. 程序会自动检测是否存在.enc文件，如果存在，则会自动进行解密操作。如果不存在，则会提示用户进行加密操作。</p>
     <hr>
-    <h2>🧀3. 其他</h2>
+    <h2>🧀3. 功能</h2>
+    <p>1. 生成密钥：生成一个随机的256位密钥，并保存到本地。</p>
+    <p>2. 加密文件夹：将文件夹里的文件加密，加密后的文件会保存在加密文件夹中。</p>
+    <p>3. 解密文件夹：将加密文件夹里的文件解密，解密后的文件会保存在解密文件夹中。</p>
+    <p>4. 文件名修改：将加密文件夹里的文件名修改为乱码。</p>
+    <p>5. 删除文件夹：将文件夹从本地删除</p>
+    <p>6. 新建文件夹：字面意思</p>
+    <p>7. 重命名文件夹：将文件夹重命名</p>
+    <p>8. 打包文件夹为zip并转为txt：将文件夹打包为zip并转为txt文件</p>
+    <p>9. 更改文件夹里的文件为乱码：将文件夹里的文件名修改为乱码，达到伪装的效果</p>
+    <p>10. 更改文件夹的图标：将文件夹的图标更改为选中的图标</p>
+    <p>11. 帮助文档：打开本页面</p>
+    <hr>
+    <h2>🧀4. 其他</h2>
     <p>本程序使用AES对称加密算法，加密密钥长度为256位，加密速度快，安全性高。</p>
     <p>本程序使用Python语言编写，使用PyQt5库进行GUI设计。</p>
     <p>本程序仅供学习交流使用，请勿用于商业用途。</p>
@@ -47,7 +88,15 @@
     <p>本程序的作者不承担因使用本程序而产生的任何法律责任。</p>
     <p>本程序隶属于可执行程序の天境小屋所在仓库页面</p>
     <hr>
-    <h2>🧀4. MIT开源协议</h2>
+    <h2>🧀5. 更新日志</h2>
+    <h3>🥪2024-8-20：</h3>
+    <p>发布1.2版本</p>
+    <h3>🥪2024-8-22：</h3>
+    <p>发布2.0版本，加入了ttkbootstrap库，修复高DPI设置下按钮样式问题 | 优化界面 | 修复bug | 优化代码</p>
+    <h3>🥪2024-8-23：</h3>
+    <p>发布3.6版本，添加文件名修改为乱码的功能，更具有欺骗性 | 添加页脚申明 | 优化界面 | 修复bug | 优化代码</p>
+    <hr>
+    <h2>🧀6. MIT开源协议</h2>
     <p>MIT License</p>
     <p>Copyright (c) 2021 The hanta</p>
     <p>Permission is hereby granted, free of charge, to any person obtaining a copy</p>
@@ -66,9 +115,20 @@
     <p>OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</p>
     <p>SOFTWARE.</p>
 
+    
+    <img src="https://img.shields.io/badge/version-3.6-blue?" class="img-badge">
+    <a href="https://github.com/exef-star/Folder-Encryption-Program"><img src="https://img.shields.io/badge/Github-Folder_Encryption_Program-blue?" class="img-badge"></a>
     <img src="https://badgen.net/github/license/micromatch/micromatch" alt="https://badgen.net/github/license/micromatch/micromatch" class="img-badge" style="margin-right: 1px;">
-    <img src="https://badgen.net/pypi/python/black" alt="https://badgen.net/#pypi/python/black" class="img-badge" style="margin-left: 10px;">
     <br>
-    <p align="right">Copyright (c) 2021 The hanta, All Rights Reserved.</p>
+    <p align="right">Copyright (c) 2021 The hanta, All Rights Reserved.Use the MIT license</p>
+    <script>
+        // JavaScript代码
+        document.getElementById('cookies-agree').addEventListener('click', function() {
+            var divToDelete = document.getElementById('cookies-alert');
+            if (divToDelete) {
+                divToDelete.parentNode.removeChild(divToDelete);
+            }
+        });
+    </script>
 </body>
 </html>
