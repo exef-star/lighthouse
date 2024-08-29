@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://s1.imagehub.cc/images/2024/08/23/21157dab9ecdc72d252db3d8f0bb3c23.png">
     <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
         body {
             font-weight: lighter
         }
@@ -18,6 +28,7 @@
         }
         .div-cookies {
             display: inline;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         .btn-cookies {
             background-color: #fff;
@@ -35,12 +46,19 @@
             color: #000000c7;
             border: 1px solid #cccccc7e;
         }
+        code {
+            background-color: #ff8888;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
     </style>
 </head>
 <body>
     <!-- Cookies声明 -->
     <div id="cookies-alert" class="div-cookies">
-        <p>🎉本网站使用cookies来提高用户体验，若您同意，您可以点击“我知道啦”按钮，否则请关闭本网站。<button id="cookies-agree" style="float: right;" class="btn-cookies">🍪接受</button></p>
+        <p>🌦️本网站使用cookies来提高用户体验，若您同意，您可以点击接受按钮，否则请关闭本网站。<button id="cookies-agree" style="float: right;" class="btn-cookies">🍪接受</button></p>
     </div>
 	<h1>🍞 文件夹加密程序 帮助页面</h1>
     <img src="https://s1.imagehub.cc/images/2024/08/23/d6f5a97ef41832d9dc06e9b5865d9332.png" style="width: 100%;">
@@ -73,7 +91,7 @@
     <p>6. 新建文件夹：字面意思</p>
     <p>7. 重命名文件夹：将文件夹重命名</p>
     <p>8. 打包文件夹为zip并转为txt：将文件夹打包为zip并转为txt文件</p>
-    <p>9. 更改文件夹里的文件为乱码：将文件夹里的文件名修改为乱码，达到伪装的效果</p>
+    <p>9. 更改文件夹里的文件为乱码：将文件夹里的文件名修改为乱码，达到伪装的效果（文件后缀名不变）</p>
     <p>10. 更改文件夹的图标：将文件夹的图标更改为选中的图标</p>
     <p>11. 帮助文档：打开本页面</p>
     <hr>
@@ -87,6 +105,11 @@
     <p>本程序的作者保留对本程序任何形式的修改权利。</p>
     <p>本程序的作者不承担因使用本程序而产生的任何法律责任。</p>
     <p>本程序隶属于可执行程序の天境小屋所在仓库页面</p>
+    <p>本程序在如需二次分发的话，请在源代码的开头处保留原作者信息，并在软件的使用说明中注明原作者的GitHub地址。</p>
+    <p>本程序源码库均采用Python3.11版本，如需完善，请对照版本确认Python库是否安装</p>
+    <p>本程序均采用CC BY-NC-SA 4.0协议，你可以自由地分享、修改、分发本程序，但请注明出处，不得用于商业用途。</p>
+    <p>本程序作者将会以每周六周日不定期更新版本，请及时关注更新日志</p>
+    <p>本程序稳定版指定为3.6版本，如果报错，请尝试降级下载使用发行版切换版本</p>
     <hr>
     <h2>🧀5. 更新日志</h2>
     <h3>🥪2024-8-20：</h3>
